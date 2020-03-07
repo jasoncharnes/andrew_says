@@ -12,4 +12,12 @@ class AndrewSaysTest < Minitest::Test
   andrew_says "math is good" do
     assert_equal 4, 2 + 2
   end
+
+  andrew_asks "does this thing work?" do
+    assert true
+  end
+
+  andrew_asks "is math good?" do
+    assert_equal 4, 2 + 2
+  end
 end
